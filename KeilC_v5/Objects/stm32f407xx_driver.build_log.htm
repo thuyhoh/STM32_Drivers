@@ -1,0 +1,188 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Trong Thuy, none, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  C:\Users\Asus\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\Microcontroller\Stm32\stm32f40x\MCU1_BaseDrivers\KeilC_v5\stm32f407xx_driver.uvprojx
+Project File Date:  11/30/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\Asus\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Application'
+compiling stm32f407xx_flash_driver.c...
+compiling stm32f407xx_dma_driver.c...
+compiling CortexM4.c...
+compiling main.c...
+compiling stm32f407xx_exti_driver.c...
+compiling stm32f407xx_bxcan_driver.c...
+compiling stm32f407xx_iwdg_driver.c...
+compiling stm32f407xx_adc_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_pwr_driver.c(94): warning: unused parameter 'Regulator' [-Wunused-parameter]
+   94 | void PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
+      |                                  ^
+1 warning generated.
+compiling stm32f407xx_pwr_driver.c...
+compiling stm32f407xx_gpio_driver.c...
+compiling stm32f407xx_rtc_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_i2c_driver.c(268): warning: unused parameter 'pI2Cx' [-Wunused-parameter]
+  268 | void I2C_DeInit(I2C_RegDef_t *pI2Cx)
+      |                               ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_i2c_driver.c(938): warning: unused parameter 'pI2CHandle' [-Wunused-parameter]
+  938 | void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle,uint8_t AppEv)
+      |                                                 ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_i2c_driver.c(938): warning: unused parameter 'AppEv' [-Wunused-parameter]
+  938 | void I2C_ApplicationEventCallback(I2C_Handle_t *pI2CHandle,uint8_t AppEv)
+      |                                                                    ^
+3 warnings generated.
+compiling stm32f407xx_i2c_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(157): warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [-Wsign-compare]
+  157 |         while((RCC->CFGR & (Clk->SYSCLKSource << RCC_CFGR_SWS)) == (Clk->SYSCLKSource << RCC_CFGR_SWS));
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(173): warning: non-void function does not return a value [-Wreturn-type]
+  173 | }
+      | ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(191): warning: variable 'SystemClk' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+  191 |         }else if (clksrc == 2)
+      |                   ^~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(220): note: uninitialized use occurs here
+  220 |         pclk1 =  (SystemClk / ahbp) /apb1p;
+      |                   ^~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(191): note: remove the 'if' if its condition is always true
+  191 |         }else if (clksrc == 2)
+      |               ^~~~~~~~~~~~~~~~
+  192 |         {
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_rcc_driver.c(179): note: initialize the variable 'SystemClk' to silence this warning
+  179 |         uint32_t pclk1,SystemClk;
+      |                                 ^
+      |                                  = 0
+3 warnings generated.
+compiling stm32f407xx_rcc_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_timer_driver.c(1): warning: In file included from...
+../../../Drivers/STM32/STM32F407VG_Drivers/Inc\stm32f407xx_timer_driver.h(185): warning: unused function 'TIM_IT_Enable' [-Wunused-function]
+  185 | static void TIM_IT_Enable(TIM_RegDef_t *pTIMx, uint32_t TIM_IT_E);
+      |             ^~~~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_timer_driver.c(15): warning: unused function 'TIM_ITControl' [-Wunused-function]
+   15 | static void TIM_ITControl(TIM_RegDef_t *pTIM, uint32_t Interrupt, uint8_t EnorDis)
+      |             ^~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f407xx_timer_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(129): warning: unused parameter 'pSPIx' [-Wunused-parameter]
+  129 | void SPI_DeInit(SPI_RegDef_t *pSPIx)
+      |                               ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(172): warning: expression result unused [-Wunused-value]
+  172 |                         (uint16_t*)pTxBuffer++;
+      |                         ^          ~~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(213): warning: expression result unused [-Wunused-value]
+  213 |                                 (uint16_t*)pRxBuffer++;
+      |                                 ^          ~~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(493): warning: expression result unused [-Wunused-value]
+  493 |                 (uint16_t*)pSPIHandle->pTxBuffer++;
+      |                 ^          ~~~~~~~~~~~~~~~~~~~~~~~
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(592): warning: unused parameter 'pSPIHandle' [-Wunused-parameter]
+  592 | __weak void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv)
+      |                                                        ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_spi_driver.c(592): warning: unused parameter 'AppEv' [-Wunused-parameter]
+  592 | __weak void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv)
+      |                                                                           ^
+6 warnings generated.
+compiling stm32f407xx_spi_driver.c...
+compiling 001_HSE_HSI_Configure.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(19): error: use of undeclared identifier 'RCC_APP1ENR_WWDGEN'
+   19 |         RCC_WWDG_PCLK_EN();
+      |         ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Inc\stm32f407xx_rcc_driver.h(229): note: expanded from macro 'RCC_WWDG_PCLK_EN'
+  229 | #define RCC_WWDG_PCLK_EN()              (RCC->APB1ENR |= 1 << RCC_APP1ENR_WWDGEN)
+      |                                                               ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(20): error: use of undeclared identifier 'RCC_APP1RSTR_WWDGEN'
+   20 |         RCC_WWDG_REG_RESET();
+      |         ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Inc\stm32f407xx_rcc_driver.h(270): note: expanded from macro 'RCC_WWDG_REG_RESET'
+  270 | #define RCC_WWDG_REG_RESET()            do{RCC->APB1RSTR |= 1 << RCC_APP1RSTR_WWDGEN ; RCC->APB1RSTR &= ~(1 << RCC_APP1RSTR_WWDGEN);}while(0)
+      |                                                                  ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(20): error: use of undeclared identifier 'RCC_APP1RSTR_WWDGEN'
+../../../Drivers/STM32/STM32F407VG_Drivers/Inc\stm32f407xx_rcc_driver.h(270): note: expanded from macro 'RCC_WWDG_REG_RESET'
+  270 | #define RCC_WWDG_REG_RESET()            do{RCC->APB1RSTR |= 1 << RCC_APP1RSTR_WWDGEN ; RCC->APB1RSTR &= ~(1 << RCC_APP1RSTR_WWDGEN);}while(0)
+      |                                                                                                                ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(22): error: use of undeclared identifier 'WWDG_MODE_IT'
+   22 |         if(sConfig->Mode == WWDG_MODE_IT)
+      |                             ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(43): warning: unused parameter 'IRQNumber' [-Wunused-parameter]
+   43 | void WWDG_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+      |                                      ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(43): warning: unused parameter 'EnorDi' [-Wunused-parameter]
+   43 | void WWDG_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+      |                                                         ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(45): warning: unused parameter 'IRQNumber' [-Wunused-parameter]
+   45 | void WWDG_IRQPrioriryConfig(uint8_t IRQNumber, uint8_t IRQPriority)
+      |                                     ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_wwdg_driver.c(45): warning: unused parameter 'IRQPriority' [-Wunused-parameter]
+   45 | void WWDG_IRQPrioriryConfig(uint8_t IRQNumber, uint8_t IRQPriority)
+      |                                                        ^
+4 warnings and 4 errors generated.
+compiling stm32f407xx_wwdg_driver.c...
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_uart_driver.c(619): warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
+  619 |         uint32_t temp1 , temp2, temp3;
+      |                                 ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_uart_driver.c(919): warning: unused parameter 'pUSARTHandle' [-Wunused-parameter]
+  919 | __weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t event)
+      |                                                            ^
+../../../Drivers/STM32/STM32F407VG_Drivers/Src/stm32f407xx_uart_driver.c(919): warning: unused parameter 'event' [-Wunused-parameter]
+  919 | __weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t event)
+      |                                                                                 ^
+3 warnings generated.
+compiling stm32f407xx_uart_driver.c...
+compiling system_stm32f4xx.c...
+".\Objects\stm32f407xx_driver.axf" - 4 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Application
+  C:/Users/Asus/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Asus/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:Startup@2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F40xxx_41xxx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
